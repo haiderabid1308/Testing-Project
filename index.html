@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Collection | Home Decor & Furniture</title>
+    <meta name="description" content="Elegant Collection offers premium home decor and furniture to elevate your living spaces. Shop our exclusive range of modern and classic designs.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>Elegant Collection</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#furniture">Furniture</a></li>
+                <li><a href="#decor">Home Decor</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" id="cartToggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <span class="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Side Cart -->
+    <div class="side-cart" id="sideCart">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p>Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Elevate Your Space with Timeless Elegance</h2>
+            <p>Discover our curated collection of premium furniture and home decor designed for the modern lifestyle.</p>
+            <a href="#furniture" class="btn-primary">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+        <div class="category-card decor-bg">
+            <div class="category-overlay">
+                <h3>Home Decor</h3>
+                <a href="#decor" class="btn-secondary">Explore</a>
+            </div>
+        </div>
+        <div class="category-card furniture-bg">
+            <div class="category-overlay">
+                <h3>Furniture</h3>
+                <a href="#furniture" class="btn-secondary">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="furniture" class="products-section">
+        <div class="section-header">
+            <h2>Featured Furniture</h2>
+            <p>Minimalist design meets exceptional comfort.</p>
+        </div>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img-container">
+                    <!-- Placeholder image color since we don't have images -->
+                    <div class="placeholder-img" style="background-color: #333;"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Velvet Lounge Chair</h3>
+                    <p class="price">$450</p>
+                    <button class="add-to-cart-btn" data-name="Velvet Lounge Chair" data-price="450">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-img-container">
+                    <div class="placeholder-img" style="background-color: #555;"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Modern Oak Dining Table</h3>
+                    <p class="price">$890</p>
+                    <button class="add-to-cart-btn" data-name="Modern Oak Dining Table" data-price="890">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-img-container">
+                    <div class="placeholder-img" style="background-color: #777;"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Charcoal Grey Sofa</h3>
+                    <p class="price">$1,200</p>
+                    <button class="add-to-cart-btn" data-name="Charcoal Grey Sofa" data-price="1200">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-img-container">
+                    <div class="placeholder-img" style="background-color: #999;"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Minimalist Bookshelf</h3>
+                    <p class="price">$320</p>
+                    <button class="add-to-cart-btn" data-name="Minimalist Bookshelf" data-price="320">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Decor Section -->
+    <section id="decor" class="products-section bg-light-grey">
+        <div class="section-header">
+            <h2>Exquisite Decor</h2>
+            <p>The perfect accents for any room.</p>
+        </div>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img-container">
+                    <div class="placeholder-img" style="background-color: #222;"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Geometric Table Lamp</h3>
+                    <p class="price">$120</p>
+                    <button class="add-to-cart-btn" data-name="Geometric Table Lamp" data-price="120">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-img-container">
+                    <div class="placeholder-img" style="background-color: #444;"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Ceramic Vase Set</h3>
+                    <p class="price">$85</p>
+                    <button class="add-to-cart-btn" data-name="Ceramic Vase Set" data-price="85">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-img-container">
+                    <div class="placeholder-img" style="background-color: #666;"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Abstract Wall Art</h3>
+                    <p class="price">$210</p>
+                    <button class="add-to-cart-btn" data-name="Abstract Wall Art" data-price="210">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-img-container">
+                    <div class="placeholder-img" style="background-color: #888;"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Woven Throw Blanket</h3>
+                    <p class="price">$60</p>
+                    <button class="add-to-cart-btn" data-name="Woven Throw Blanket" data-price="60">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section brand">
+                <h2>Elegant Collection</h2>
+                <p>Curating the finest home decor and furniture for your modern lifestyle. Elevate your space with our premium selections.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#furniture">Furniture</a></li>
+                    <li><a href="#decor">Decor</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact" id="contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@elegantcollection.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Elegant Collection. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
